@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database/database.iml" filepath="$PROJECT_DIR$/database/database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributioncrowdparent.iml" filepath="$PROJECT_DIR$/distributioncrowdparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member/member.iml" filepath="$PROJECT_DIR$/member/member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/project.iml" filepath="$PROJECT_DIR$/project/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registrycenter/registrycenter.iml" filepath="$PROJECT_DIR$/registrycenter/registrycenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webui/webui.iml" filepath="$PROJECT_DIR$/webui/webui.iml" />
+    </modules>
+  </component>
+</project>

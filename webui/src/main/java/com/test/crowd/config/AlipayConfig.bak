@@ -1,0 +1,43 @@
+﻿package com.atguigu.crowd.config;
+
+/* *
+ *类名：AlipayConfig
+ *功能：基础配置类
+ *详细：设置帐户有关信息及返回路径
+ *修改日期：2017-04-05
+ *说明：
+ *以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
+ *该代码仅供学习和研究支付宝接口使用，只是提供一个参考。
+ */
+
+public class AlipayConfig {
+	
+//↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+	// 应用ID,您的APPID，收款账号既是您的APPID对应支付宝账号
+	public static String app_id = "2016080400166558";
+	
+	// 商户私钥，您的PKCS8格式RSA2私钥
+    public static String merchant_private_key = "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQCQ1eHyR1TV0fbyTXFk6YTo7i+8kCuuXO2q5JYj98p0ypqOk/8RW45XChjiAcohRGjWqT1L8aGVG0mAcT05pLEEPAoeg5oHRXJfMrxhecE5FRew9dr5v3BZruwtEfeqYSLaFn5U7b6N5u+HldxSYL0GfeZICN6W1w/yxh4cIAZbDK0a0iIwNsyqKwGBaWMb4BOpzqPqtvBja11VS0zMAM26N3HbUg3PRZ3BfiL0+SuRfv+9JEq5iuHJKvI89GWw0ekdcrVNR2JvXLBVlmtsjGZWG+SpRS5BOCn+ZIe/W/5sQtoGRyzzAuS8SbGJqnKZ8C6nYJS41yKcWwoHaVgjVGY1AgMBAAECggEBAIz6Ew8PzYy+7f8V0G0oO/26cm65ajszKwevrlDeTYt29hAYECumEZu5MVUz5rqQ6vcfDpIQZXZMdDP4hV7JZqA3jKX89P1k5JmzOdgreh+E32WZOYblh4dUE4EfPxHxsMnVISyrqVJYWgiAn07z6Kob+/1b3MW4Gkb1/rLjnSwbZ4Nq9sl9VEwcnzn9CZf/qfeTzBuOPy/x3H0DW7s1UrsPuzsG/UsQciYRv5xKPthumV+/cLP6jZ3M2G198mnPtnATunNBHv8vsiG0jPWleu3LVhXLLc+YJqd/6mBdcFvcz6r1yHqIvxWfAR7636l9I7wFcLRpcRYZYQtGENRomGECgYEA0LtiFzhDRIS/tNVlJr0+RwP2KS2zHKU84tfT5KD4HearbdvR8cuIvJedTOIOeyAaZ0KbSA00sVXxDJqYhreqBE5Nk0lR0CljGOGHnhgHYtvDn9DFda+4BNVLH1tJ1covD8QAJiAHzLF49mto2uITx7n0tpD2avjdA3963OQH+f0CgYEAsaJKQjYNuvAymdqB3yxUquu06qRx/vSK+pOvAGD/eRUAukMg3n9byiV34PYXWLWwsWHxkfGBaoGbdnQrqG2Yd+oVmJUt4NUo56RAoldKds4whgvNJ8nZRnVsFhXCizjL/Ed27u/WknoClz24D5qwwz2AjnO7oVbz1Wp9sVR5VpkCgYEArniymS4SLCe6BnGIx0TP1ZReIjVszbjgl8xH9YcHXhb9nCpt5mp2tQ0WErmx2QEQkNd/7E39iW2IuzxN2e2TU14QQdi7Zf/yMU3yihcTtXJ0phVft+tVKdUPofowUV9azxbJ+RQ08Mg3j+JgFvV6CyxIfIHXN7slIlNgY1rHwBECgYEAi6Ll+RKAzJkRTfyE5yj0DcBoYaOPsToPHleF1Chr64TlI4atifpX75pwmDkbtTJuiaJSwcU1VMI5sW40+5vbpTgwbdenTvyBwUZPQM6ZzLbdUiJozYRQ9qBLrTjBy6uEPvb2uXF0HYUoEDgGPs39ch0gt9qmfnfaCcRCtmmPUNECgYEAwcegR4YTYgde13YW2SdpLyVCLy07ke+3Z3LtYsBib3MBT8KEcMKBjHxo8MTiLcnejTi1ws21kvdemLydPOgEm+Go7W2foq/mu3SomonSNBlddBrV9vl1dBUV4ATRwlo0g618xU3YXA+A0Wg1n/Yvr/dPlNECkYDubICrETRdnOA=";
+	
+	// 支付宝公钥,查看地址：https://openhome.alipay.com/platform/keyManage.htm 对应APPID下的支付宝公钥。
+    // 沙箱公钥地址：https://openhome.alipay.com/platform/appDaily.htm
+    public static String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmthQwmxlCowktqwc+237Enxs7FfNoVMi9BlCA430Vor2Z1IPIDOOdarYdOQLMxl/PxZfgl/6iMRJB43kzfPVFezJ9xim8AC07ZCVi1NZop3q6qhL3s7w5o809BvkaIVnThpSfvifO3wUxBImXwnSfLaD9CMjtNbD4ri1sDQ3CV+g66nR3oIQTfEMAif7GafDkt4nnG+lcd7tOoOsM+6anP8t6M+KDzcpBZ3wsPEIlJVIQgLbBx61g5QZ/p+piDwl0h85QTnz68qHXCE3JRn8MDWOarKEQkFXbuAis2YbJ8agVDpBomrok2i71jdJn863TLsvB76kRjeq1Ygf5YhQWQIDAQAB";
+
+	// 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+	public static String notify_url = "http://ekmmng.natappfree.cc/pay/notify.html";
+
+	// 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+	public static String return_url = "http://ekmmng.natappfree.cc/pay/return.html";
+
+	// 签名方式
+	public static String sign_type = "RSA2";
+	
+	// 字符编码格式
+	public static String charset = "utf-8";
+	
+	// 支付宝网关
+	public static String gatewayUrl = "https://openapi.alipaydev.com/gateway.do";
+
+}
+

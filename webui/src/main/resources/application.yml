@@ -1,0 +1,33 @@
+server:
+  port: 80
+spring:
+  application:
+    name: webui
+  redis:
+    host: 192.168.11.129
+    jedis:
+      pool:
+        max-idle: 100
+  session:
+    store-type: redis
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+  instance:
+    prefer-ip-address: true
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+oss.project.parent.folder: project
+oss.endpoint: oss-cn-beijing.aliyuncs.com
+oss.accessKeyId: LTAI4FsEAYSX2gpKPtz9ZfUu
+oss.accessKeySecret: DabnEvb8JZcZ8IqRPDV3FSgIjKjo7e
+oss.bucketName: crowd2020
+oss.bucket.domain: http://crowd2020.oss-cn-beijing.aliyuncs.com
